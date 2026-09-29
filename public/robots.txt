@@ -15,4 +15,4 @@ Disallow: /brochure.html
 Disallow: /vendor/
 Disallow: /js/
 
-Sitemap: https://www.yourdomain.com/sitemap.xml
+Sitemap: https://recruitment.autoapplycv.in/sitemap.xml
