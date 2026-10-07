@@ -21,7 +21,11 @@
 	<title>Frequently Asked Questions | Recruitment Agency India</title>
     
 	<!-- Favicon icon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="manifest" href="/site.webmanifest">
     
 	<!-- Stylesheet -->
     <link href="vendor/lightgallery/css/lightgallery.min.css" rel="stylesheet">
@@ -33,8 +37,13 @@
 	<link href="fonts.googleapis.com/css2.css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
 	
 	<!-- Custom Stylesheet -->
+    <link rel="preload" href="/fonts.gstatic.com/woff2/poppins-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts.gstatic.com/woff2/roboto-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="icons/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="icons/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="icons/flaticon/flaticon.css">
+    <link rel="stylesheet" href="icons/themify/themify-icons.css">
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="vendor/rangeslider/rangeslider.css">
 
     <!-- <link rel="stylesheet" href="vendor/switcher/switcher.css"> -->
 	
@@ -49,6 +58,38 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I get started with your recruitment services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Share your hiring requirements through our Contact Us page or on WhatsApp. Our team will get back to you to discuss the roles, timelines and budget, and then start sourcing candidates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can job seekers apply through you?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Job seekers can submit their resume through our Contact Us page, and we will match them with suitable openings from our clients."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you hire across India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We hire for clients in 50+ cities across India, including Bengaluru, Hyderabad, Pune, Mumbai, Delhi NCR and Chennai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you a remote recruitment agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We are a remote-first recruitment agency. Our recruiters work online with employers and candidates across India, so we can hire for any city, and for remote roles, without you needing to visit an office."
+      }
+    },
     {
       "@type": "Question",
       "name": "What is your recruitment process?",
@@ -109,7 +150,7 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://recruitment.autoapplycv.in/index.html"
+      "item": "https://recruitment.autoapplycv.in/"
     },
     {
       "@type": "ListItem",
@@ -122,13 +163,6 @@
 </script>
 </head>
 <body id="bg">
-<div id="loading-area" class="loading-page-1">
-	<div class="spinner">
-		<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<circle cx="8" cy="8" r="7" stroke-width="1"/>
-		</svg>
-	</div>
-</div>
 <div class="page-wraper">
 	<!-- Header -->
 	<header class="site-header mo-left header style-2">
@@ -140,7 +174,7 @@
 				<div class="container clearfix">
 					<!-- Website Logo -->
 					<div class="logo-header mostion logo-white">
-						<a href="index.html"><img src="images/logodark.png" alt="Recruitment Agency Logo"></a>
+						<a href="/"><img loading="lazy" decoding="async" src="images/logodark.webp" alt="Recruitment Agency Logo"></a>
 					</div>
 					<!-- Nav Toggle Button -->
 					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -151,7 +185,7 @@
 					<!-- Extra Nav -->
 					<div class="extra-nav">
 						<div class="extra-cell">
-							<a href="#" class="btn btn-primary shadow auto-apply-cv">Auto Apply CV <i class="las la-file-upload m-l5"></i></a>
+							<a href="https://autoapplycv.in/" target="_blank" rel="noopener" class="btn btn-primary shadow auto-apply-cv">Auto Apply CV <i class="las la-file-upload m-l5"></i></a>
 								<a href="#" class="btn btn-primary shadow js-get-hired">Get Hired <i class="las la-user-check m-l5"></i></a>
 						</div>
 					</div>
@@ -159,16 +193,10 @@
 					
 					<div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
 						<div class="logo-header logo-dark">
-							<a href="index.html"><img src="images/logo.png" alt="Recruitment Agency Logo"></a>
+							<a href="/"><img src="images/logo.webp" alt="Recruitment Agency Logo"></a>
 						</div>
 						<ul class="nav navbar-nav navbar navbar-left">	
-							<li class="sub-menu-down"><a href="javascript:void(0);"><span>Home</span></a>
-								<ul class="sub-menu">
-									<li><a href="index.html">Home 1</a></li>
-									<li><a href="index-2.html">Home 2</a></li>
-									<li><a href="index-3.html">Home 3</a></li>
-								</ul>
-							</li>
+							<li><a href="/"><span>Home</span></a></li>
 							<li class="sub-menu-down"><a href="javascript:void(0);"><span>Pages</span></a>
 								<ul class="sub-menu">
 									<li><a href="team.html">Team</a></li>
@@ -210,7 +238,7 @@
 					<!-- Breadcrumb Row -->
 					<nav aria-label="breadcrumb" class="breadcrumb-row">
 						<ul class="breadcrumb">
-							<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							<li class="breadcrumb-item"><a href="/">Home</a></li>
 							<li class="breadcrumb-item active" aria-current="page">FAQ</li>
 						</ul>
 					</nav>
@@ -226,7 +254,7 @@
 				<div class="row">
 					<div class="col-lg-6 align-self-center m-b30">
 						<div class="dz-media move-1 p-r20 p-md-r0">
-							<img src="images/about/pic2.png" alt="">
+							<img loading="lazy" decoding="async" src="images/about/pic2.png" alt="Job openings and hiring dashboard">
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -238,39 +266,52 @@
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingOne">
 									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-										Cras turpis felis, elementum sed mi at arcu ?
+										How do I get started with your recruitment services?
 										<span class="toggle-close"></span>
 									</a>
 								</h2>
 								<div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionFaq">
 									<div class="accordion-body">
-										<p class="m-b0">Vestibulum nibh risus, lobortis in neque eleifend, varius vulputate sem. Donec maximus, sapien id auctor ornare, odio mi luctus massa, id rhoncus velit purus eu turpis onec aliquet mauris est.</p>
+										<p class="m-b0">Share your hiring requirements through our Contact Us page or on WhatsApp. Our team will get back to you to discuss the roles, timelines and budget, and then start sourcing candidates.</p>
 									</div>
 								</div>
 							</div>
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingTwo">
 									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										Vestibulum nibh risus, in neque eleifendulputate
+										Can job seekers apply through you?
 										<span class="toggle-close"></span>
 									</a>
 								</h2>
 								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
 									<div class="accordion-body">
-										<p class="m-b0">Vestibulum nibh risus, lobortis in neque eleifend, varius vulputate sem. Donec maximus, sapien id auctor ornare, odio mi luctus massa, id rhoncus velit purus eu turpis onec aliquet mauris est.</p>
+										<p class="m-b0">Yes. Job seekers can submit their resume through our Contact Us page, and we will match them with suitable openings from our clients.</p>
 									</div>
 								</div>
 							</div>
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingThree">
 									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-										Donec maximus, sapien id auctor ornare ?
+										Do you hire across India?
 										<span class="toggle-close"></span>
 									</a>
 								</h2>
 								<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaq">
 									<div class="accordion-body">
-										<p class="m-b0">Vestibulum nibh risus, lobortis in neque eleifend, varius vulputate sem. Donec maximus, sapien id auctor ornare, odio mi luctus massa, id rhoncus velit purus eu turpis onec aliquet mauris est.</p>
+										<p class="m-b0">Yes. We hire for clients in 50+ cities across India, including Bengaluru, Hyderabad, Pune, Mumbai, Delhi NCR and Chennai.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFour">
+									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										Are you a remote recruitment agency?
+										<span class="toggle-close"></span>
+									</a>
+								</h2>
+								<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFaq">
+									<div class="accordion-body">
+										<p class="m-b0">Yes. We are a remote-first recruitment agency. Our recruiters work online with employers and candidates across India, so we can hire for any city, and for remote roles, without you needing to visit an office.</p>
 									</div>
 								</div>
 							</div>
@@ -285,7 +326,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="video-bx style-2 large overlay-black-light">
-							<img src="images/background/bg1.jpg" alt="">
+							<img loading="lazy" decoding="async" src="images/background/bg1.webp" alt="">
 							<div class="video-btn">
 								<a href="#" class="btn btn-primary shadow js-get-hired">Get Hired <i class="las la-user-check m-l5"></i></a>
 							</div>
@@ -307,39 +348,39 @@
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingOne1">
 									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-										Cras turpis felis, elementum sed mi at arcu ?
+										What is your recruitment process?
 										<span class="toggle-close"></span>
 									</a>
 								</h2>
 								<div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1" data-bs-parent="#accordionFaq2">
 									<div class="accordion-body">
-										<p class="m-b0">Vestibulum nibh risus, lobortis in neque eleifend, varius vulputate sem. Donec maximus, sapien id auctor ornare, odio mi luctus massa, id rhoncus velit purus eu turpis onec aliquet mauris est.</p>
+										<p class="m-b0">Our recruitment process involves 6 steps: Understanding your requirements, Sourcing candidates from our database and networks, Screening and shortlisting, Technical assessment, Interview coordination, and Offer management with onboarding support.</p>
 									</div>
 								</div>
 							</div>
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingTwo1">
 									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
-										Vestibulum nibh risus, in neque eleifendulputate
+										How quickly can you fill positions?
 										<span class="toggle-close"></span>
 									</a>
 								</h2>
 								<div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="#accordionFaq2">
 									<div class="accordion-body">
-										<p class="m-b0">Vestibulum nibh risus, lobortis in neque eleifend, varius vulputate sem. Donec maximus, sapien id auctor ornare, odio mi luctus massa, id rhoncus velit purus eu turpis onec aliquet mauris est.</p>
+										<p class="m-b0">For IT roles, our average turnaround is 12-15 days. For non-IT and bulk hiring, we can deliver within 7-10 business days. For executive search roles, expect 3-4 weeks for comprehensive market mapping and shortlisting.</p>
 									</div>
 								</div>
 							</div>
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingThree1">
 									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
-										Donec maximus, sapien id auctor ornare ?
+										What industries do you serve?
 										<span class="toggle-close"></span>
 									</a>
 								</h2>
 								<div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#accordionFaq2">
 									<div class="accordion-body">
-										<p class="m-b0">Vestibulum nibh risus, lobortis in neque eleifend, varius vulputate sem. Donec maximus, sapien id auctor ornare, odio mi luctus massa, id rhoncus velit purus eu turpis onec aliquet mauris est.</p>
+										<p class="m-b0">We serve IT & Technology, BFSI (Banking, Financial Services, Insurance), Healthcare, Manufacturing, E-commerce, Automotive, Telecom, and Retail industries across India.</p>
 									</div>
 								</div>
 							</div>
@@ -350,39 +391,39 @@
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingOne2">
 									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-										Vestibulum nibh risus, in neque eleifendulputate
+										Do you offer candidate replacement guarantee?
 										<span class="toggle-close"></span>
 									</a>
 								</h2>
 								<div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionFaq3">
 									<div class="accordion-body">
-										<p class="m-b0">Vestibulum nibh risus, lobortis in neque eleifend, varius vulputate sem. Donec maximus, sapien id auctor ornare, odio mi luctus massa, id rhoncus velit purus eu turpis onec aliquet mauris est.</p>
+										<p class="m-b0">Yes, we offer a 90-day free replacement guarantee. If a placed candidate leaves or is terminated within 90 days, we provide a replacement candidate at no additional cost.</p>
 									</div>
 								</div>
 							</div>
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingTwo2">
 									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-										Donec maximus, sapien id auctor ornare ?
+										How do you charge for recruitment services?
 										<span class="toggle-close"></span>
 									</a>
 								</h2>
 								<div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionFaq3">
 									<div class="accordion-body">
-										<p class="m-b0">Vestibulum nibh risus, lobortis in neque eleifend, varius vulputate sem. Donec maximus, sapien id auctor ornare, odio mi luctus massa, id rhoncus velit purus eu turpis onec aliquet mauris est.</p>
+										<p class="m-b0">We charge between 8.33% to 15% of the hired candidate's annual CTC for permanent placements. For bulk hiring (50+ positions), we offer discounted per-hire pricing starting at Rs. 5,000. RPO and retained search models are also available.</p>
 									</div>
 								</div>
 							</div>
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingThree2">
 									<a href="faq.html#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
-										Vestibulum nibh risus, in neque eleifendulputate
+										How many placements have you made so far?
 										<span class="toggle-close"></span>
 									</a>
 								</h2>
 								<div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionFaq3">
 									<div class="accordion-body">
-										<p class="m-b0">Vestibulum nibh risus, lobortis in neque eleifend, varius vulputate sem. Donec maximus, sapien id auctor ornare, odio mi luctus massa, id rhoncus velit purus eu turpis onec aliquet mauris est.</p>
+										<p class="m-b0">We have made over 50,000+ successful placements across 50+ cities in India with a 95% client retention rate and 92% first-year candidate retention rate.</p>
 									</div>
 								</div>
 							</div>
@@ -401,7 +442,7 @@
 					<a href="contact-us.html" class="btn btn-white shadow">Get Started</a>
 					<div class="bg-img">
 						<div class="bg-img js-tilt">
-						<img src="images/bg-color.png" alt="Background decoration" class="bg-shape">
+						<img loading="lazy" decoding="async" src="images/bg-color.png" alt="Background decoration" class="bg-shape">
 					</div>
 					</div>
 				</div>
@@ -412,13 +453,13 @@
 						<div class="col-xl-4 col-lg-4 col-sm-8">
 							<div class="widget widget_about">
 								<div class="footer-logo logo-white">
-									<a href="index.html"><img src="images/logodark.png" alt="Recruitment Agency Logo"></a> 
+									<a href="/"><img loading="lazy" decoding="async" src="images/logodark.webp" alt="Recruitment Agency Logo"></a> 
 								</div>
 								<div class="widget widget_getintuch">
 									<ul>
 										<li>
-											<i class="fas fa-map-marker-alt"></i>
-											<span>1247/Plot No. 39, 15th Phase, Huab Colony, Kukatpally, Hyderabad</span>
+											<i class="fas fa-globe-asia"></i>
+											<span>Remote-first · Serving clients across India</span>
 										</li>
 										<li>
 											<i class="fa fa-envelope"></i> 
@@ -439,7 +480,7 @@
 							<div class="widget widget_services">
 								<h4 class="footer-title">Our links</h4>
 								<ul>
-									<li><a href="index.html">Home</a></li>
+									<li><a href="/">Home</a></li>
 									<li><a href="about-us.html">About Us</a></li>
 									<li><a href="services.html">Services</a></li>
 									<li><a href="blog-grid.html">News</a></li>
@@ -451,11 +492,12 @@
 							<div class="widget widget_services">
 								<h4 class="footer-title">Our Services</h4>
 								<ul>
-									<li><a href="javascript:void(0);">Secure Data</a></li>
-									<li><a href="javascript:void(0);">Free Trial</a></li>
-									<li><a href="javascript:void(0);">User Friendly</a></li>
-									<li><a href="javascript:void(0);">24x7 Support</a></li>
-									<li><a href="javascript:void(0);">Pricing Plan</a></li>
+									<li><a href="blog/best-recruitment-agency-for-it-jobs-india.html">IT Staffing</a></li>
+									<li><a href="blog/best-executive-search-firms-india.html">Executive Search</a></li>
+									<li><a href="blog/recruitment-agency-for-bulk-hiring-india.html">Bulk Hiring</a></li>
+									<li><a href="blog/best-recruitment-agency-for-freshers-india.html">Campus &amp; Fresher Hiring</a></li>
+									<li><a href="blog/recruitment-process-outsource-rpo-india.html">RPO Services</a></li>
+									<li><a href="pricing.html">Pricing</a></li>
 								</ul>
 							</div>
 						</div>
@@ -464,27 +506,27 @@
 								<h4 class="footer-title">Latest Post</h4>
 								<div class="widget-post-bx">
 									<div class="widget-post clearfix">
-										<div class="dz-media"> 
-											<img src="images/blog/recent-blog/pic1.jpg" alt="Recent blog post thumbnail">
+										<div class="dz-media">
+											<img loading="lazy" decoding="async" src="images/blog/recent-blog/pic1.jpg" alt="Top 5 Recruitment Agencies in Bengaluru (2026)">
 										</div>
 										<div class="dz-info">
-											<h6 class="title"><a href="blog-details.html">Aliqua sodales vestibulum risus nterdum malesuad</a></h6>
+											<h6 class="title"><a href="blog/top-5-recruitment-agencies-in-bengaluru.html">Top 5 Recruitment Agencies in Bengaluru (2026)</a></h6>
 											<div class="dz-meta">
 												<ul>
-													<li class="post-date"> <i class="las la-calendar"></i> 7 March, 2024</li>
+													<li class="post-date"> <i class="las la-calendar"></i> 10 July 2025</li>
 												</ul>
 											</div>
 										</div>
 									</div>
 									<div class="widget-post clearfix">
-										<div class="dz-media"> 
-											<img src="images/blog/recent-blog/pic2.jpg" alt="Recent blog post thumbnail">
+										<div class="dz-media">
+											<img loading="lazy" decoding="async" src="images/blog/recent-blog/pic2.jpg" alt="Top 5 Recruitment Agencies in Hyderabad (2026)">
 										</div>
 										<div class="dz-info">
-											<h6 class="title"><a href="blog-details.html">How To Make Money From The AGENCY Phenomenon</a></h6>
+											<h6 class="title"><a href="blog/top-5-recruitment-agencies-in-hyderabad.html">Top 5 Recruitment Agencies in Hyderabad (2026)</a></h6>
 											<div class="dz-meta">
 												<ul>
-													<li class="post-date"> <i class="las la-calendar"></i> 7 March, 2024 </li>
+													<li class="post-date"> <i class="las la-calendar"></i> 8 July 2025</li>
 												</ul>
 											</div>
 										</div>
@@ -523,7 +565,6 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="js/get-hired.js?v=6"></script><!-- GET HIRED MODAL -->
 <script src="vendor/wow/wow.js"></script><!-- WOW JS -->
-<script src="vendor/rangeslider/rangeslider.js"></script><!-- RANGESLIDER -->
 <script src="vendor/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
 <script src="vendor/lightgallery/js/lightgallery-all.min.js"></script><!-- LIGHTGALLERY -->
 <script src="vendor/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->

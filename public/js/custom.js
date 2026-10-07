@@ -231,12 +231,12 @@ var Zapolo = function(){
 				var menu = jQuery('.sticky-header');
 				if ($(window).scrollTop() > menu.offset().top) {
 					menu.addClass('is-fixed');
-					$('.site-header .container > .logo-header .logo').attr('src','images/logo.png');
-					$('.site-header .container > .logo-header .logo-2').attr('src','images/logo-2.png');
-					$('.site-header .container > .logo-header .logo-3').attr('src','images/logo-3.png');
+					$('.site-header .container > .logo-header .logo').attr('src','/images/logo.webp');
+					$('.site-header .container > .logo-header .logo-2').attr('src','/images/logo-2.png');
+					$('.site-header .container > .logo-header .logo-3').attr('src','/images/logo-3.png');
 				} else {
 					menu.removeClass('is-fixed');
-					$('.site-header .container > .logo-header .logo, .site-header .container > .logo-header .logo-2, .site-header .container > .logo-header .logo-3').attr('src','images/logodark.png')
+					$('.site-header .container > .logo-header .logo, .site-header .container > .logo-header .logo-2, .site-header .container > .logo-header .logo-3').attr('src','/images/logodark.webp')
 				}
 			}
 		});

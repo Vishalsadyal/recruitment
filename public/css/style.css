@@ -14,11 +14,6 @@
     7. Pages
     
 */
-@import url("../vendor/animate/animate.min.css");
-@import url("../icons/line-awesome/css/line-awesome.min.css");
-@import url("../icons/font-awesome/css/all.min.css");
-@import url("../icons/flaticon/flaticon.css");
-@import url("../icons/themify/themify-icons.css");
 :root {
   --gradient: linear-gradient( to right, rgb(255,64,62) 0%, rgb(255,129,27) 100%);
   --gradient-sec: linear-gradient( to right, rgb(57,26,166) 0%, rgb(6,163,245) 100%);
@@ -20151,3 +20146,6 @@ body {
   margin: 0.25rem 0 0.5rem; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Reserve button icon width before the icon font loads (prevents layout shift) */
+.btn i.las, .btn i.lar, .btn i.lab { width: 1em; }

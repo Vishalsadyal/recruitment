@@ -42,27 +42,27 @@ dzSettings.prototype.managePrimaryColor = function() {
 	switch(this.themeFullColor_value) {
 		case "color_1": 
             body.attr("data-color", "color_1");
-			$('.logo-dark img').attr('src', "images/logo.png");                
+			$('.logo-dark img').attr('src', "/images/logo.webp");                
             break;
             
         case "color_2": 
             body.attr("data-color", "color_2");
-			$('.logo-dark img').attr('src', "images/logo-2.png");
+			$('.logo-dark img').attr('src', "/images/logo-2.png");
             break;
             
         case "color_3": 
             body.attr("data-color", "color_3");
-			$('.logo-dark img').attr('src', "images/logo-3.png");
+			$('.logo-dark img').attr('src', "/images/logo-3.png");
             break;
             
         case "color_4": 
             body.attr("data-color", "color_4");
-            $('.logo-dark img').attr('src', "images/logo-4.png");
+            $('.logo-dark img').attr('src', "/images/logo-4.png");
             break;
             
         default:
             body.attr("data-color", "color_1");
-			$('.logo-dark img').attr('src', "images/logo.png");
+			$('.logo-dark img').attr('src', "/images/logo.webp");
     }
 }
 
